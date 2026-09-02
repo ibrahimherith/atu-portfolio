@@ -3,7 +3,11 @@ import Navbar from "./components/navbar";
 
 function App() {
   return (
-    <div className="bg-indigo-200 items-center p-4">
+    <div className="min-h-screen items-center pt-6 bg-cover bg-center"
+      style={{
+        backgroundImage: "url('/dev 1.jpg')",
+      }}
+    >
       <Navbar />
       <HeroPage />
     </div>
