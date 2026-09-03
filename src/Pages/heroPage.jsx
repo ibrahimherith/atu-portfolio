@@ -1,6 +1,6 @@
 const HeroPage = () => {
     return ( 
-        <div className="flex"> 
+        <section id="home" className="flex"> 
             <div className="text-center mx-auto mt-20 max-w-5xl w-6/12 px-4">
                 <h1 className="font-bold text-4xl">I am Atupye Tweve,</h1> 
 
@@ -17,7 +17,7 @@ const HeroPage = () => {
                 </div>
             </div>
             <div className="mt-20 max-w-5xl w-6/12"></div>
-        </div>
+        </section>
      );
 }
  
