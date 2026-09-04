@@ -1,8 +1,8 @@
 import Navbar from "../components/Navbar";
 
-const AboutPage = () => {
-  return (
-    <>
+const ProjectPage = () => {
+    return ( 
+         <>
       <section
          className="items-center min-h-screen pt-4 pb-15 bg-cover bg-center"
         style={{
@@ -12,14 +12,14 @@ const AboutPage = () => {
 
         <Navbar />
 
-        <h1 className="text-center text-5xl font-bold">About Me</h1>
+        <h1 className="text-center text-5xl font-bold">My Projects</h1>
 
         <p className="mx-auto mt-10 max-w-2xl text-center">
           I am a Frontend Developer and Product Specialist.
         </p>
       </section>
     </>
-  );
-};
-
-export default AboutPage;
+     );
+}
+ 
+export default ProjectPage;
