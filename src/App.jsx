@@ -1,23 +1,18 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutPage from "./Pages/aboutPage";
-import HeroPage from "./Pages/heroPage";
-import Navbar from "./components/navbar";
+import HomePage from "./Pages/HomePage";
 
 function App() {
   return (
-    <>
-      <div className="items-center pt-4 pb-15 bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/dev 1.jpg')",
-        }}
-      >
-        <Navbar />
-        <HeroPage />
-      </div>
-      
-      <AboutPage />
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+
+        {/* task complete the remaining routes */}
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
-
+export default App;
