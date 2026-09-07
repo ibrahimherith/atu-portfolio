@@ -2,9 +2,9 @@ import { LuMenu } from "react-icons/lu";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between mx-auto bg-cyan-600 container text-white px-8 py-2 fixed z-9999 top-0">
-      <div><LuMenu className="text-2xl" /></div>
-      <div className=""><ul className="flex justify-center gap-20">
+    <div className="mx-auto bg-cyan-600 w-full text-white px-8 py-2 fixed z-9999 top-0">
+      <LuMenu className="block lg:hidden text-2xl" />
+      <ul className="lg:flex justify-end gap-20 hidden ">
         <li> 
           <a href="/">HOME</a>
         </li>
@@ -20,7 +20,7 @@ const Navbar = () => {
         <li>
           <a href="/contact">CONTACT</a>
         </li>
-      </ul></div>
+      </ul>
     </div>
   );
 };
