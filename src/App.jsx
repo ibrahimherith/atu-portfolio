@@ -14,8 +14,6 @@ function App() {
         <Route path="/project" element={<ProjectPage />} />
         <Route path="/skill" element={<SkillsPage />} />
         <Route path="/contact" element={<ContactPage />} />
-
-        {/* task complete the remaining routes */}
       </Routes>
     </BrowserRouter>
   );

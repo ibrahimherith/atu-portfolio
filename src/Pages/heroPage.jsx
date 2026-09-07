@@ -1,23 +1,28 @@
 const HeroPage = () => {
     return ( 
-        <section id="home" className="flex"> 
-            <div className="text-center mx-auto mt-20 max-w-5xl w-6/12 px-4">
+        <div id="home" className="flex items-center gap-4 px-10 h-screen w-full overflow-hidden"> 
+            <div className="flex-2 space-y-8 text-start">
                 <h1 className="font-bold text-4xl">I am Atupye Tweve,</h1> 
 
-                <h2 className="text-cyan-600 text-5xl mt-4 font-bold font-comic">Frontend Developer and 
+                <h2 className="text-cyan-600 text-5xl font-bold font-comic">Frontend Developer and 
                     <br />Product Specialist.
                 </h2>
 
-                <p className="mt-12 text-sm text-gray-300">I'm experienced with 2+ years in
+                <p className="text-sm text-gray-600">I'm experienced with 2+ years in
                     both Frontend web development and product management</p>
 
-                <div className="flex justify-center text-gray-300 gap-10 mt-16">
-                    <button className="border rounded-md font-bold px-5">HIRE ME</button>
-                    <button className="border rounded-md font-bold px-5">VIEW RESUME</button>
+                <div className="flex text-gray-600 gap-4">
+                    <button className="bg-gray-300 border rounded-md font-bold px-8 py-2">HIRE ME</button>
+                    <button className="bg-cyan-600 border rounded-md font-bold px-8 py-2">VIEW RESUME</button>
                 </div>
             </div>
-            <div className="mt-20 max-w-5xl w-6/12"></div>
-        </section>
+
+            <div className="flex-1 bg-amber-800 ">
+                <div className="">
+                    <img src="demo1.png" className="w-full h-auto "/>
+                </div>
+            </div>
+        </div>
      );
 }
  

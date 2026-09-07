@@ -1,8 +1,11 @@
+import { LuMenu } from "react-icons/lu";
+
 const Navbar = () => {
   return (
-    <div className="bg-cyan-600 text-white mx-auto w-[90%] py-2 rounded-3xl">
-      <ul className="flex justify-center gap-20">
-        <li>
+    <div className="flex justify-between mx-auto bg-cyan-600 container text-white px-8 py-2 fixed z-9999 top-0">
+      <div><LuMenu className="text-2xl" /></div>
+      <div className=""><ul className="flex justify-center gap-20">
+        <li> 
           <a href="/">HOME</a>
         </li>
         <li>
@@ -17,7 +20,7 @@ const Navbar = () => {
         <li>
           <a href="/contact">CONTACT</a>
         </li>
-      </ul>
+      </ul></div>
     </div>
   );
 };
