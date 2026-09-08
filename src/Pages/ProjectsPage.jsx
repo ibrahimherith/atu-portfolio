@@ -8,7 +8,7 @@ const ProjectPage = () => {
 
         <h1 className="text-center text-5xl font-bold">My Projects</h1>
 
-        <div className="min-h-100 flex justify-center items-center overflow-hidden">
+        <div className="min-h-100 flex justify-center items-center">
         <div className="grid grid-cols-2 grid-rows-2 gap-10 text-center">
                     
           <div className="block px-2 py-2 hover:bg-amber-100">
