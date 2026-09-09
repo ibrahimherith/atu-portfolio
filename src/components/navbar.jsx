@@ -16,47 +16,56 @@ const Navbar = () => {
 
         {/* desktop view */}
         <ul className="md:flex justify-end gap-20 hidden ">
-          <li> 
+
+          <li className="hover:text-amber-300"> 
             <a href="/">HOME</a>
           </li>
-          <li>
+          <li className="hover:text-amber-300">
             <a href="/about">ABOUT</a>
           </li>
-          <li>
+          <li className="hover:text-amber-300">
             <a href="/project">PROJECTS</a>
           </li>
-          <li>
+          <li className="hover:text-amber-300">
             <a href="/skill">SKILLS</a>
           </li>
-          <li>
+          <li className="hover:text-amber-300">
             <a href="/contact">CONTACT</a>
           </li>
         </ul>
 
+        {isMenuOpen && (
+          <div
+            className="fixed inset-0 bg-black/40 backdrop-blur-sm lg:hidden"
+            onClick={() => setIsMenuOpen(false)}
+          />
+        )}
+
         {/* mobile view */}
         {isMenuOpen && (
-        <ul className="flex flex-col items-center gap-6 py-6 md:hidden">
-          <li className="hover:bg-amber-100">
-            <a href="/">HOME</a>
-          </li>
-          <li className="hover:bg-amber-100">
-            <a href="/about">ABOUT</a>
-          </li>
-          <li className="hover:bg-amber-100">
-            <a href="/project">PROJECTS</a>
-          </li>
-          <li className="hover:bg-amber-100">
-            <a href="/skill">SKILLS</a>
-          </li>
-          <li className="hover:bg-amber-100">
-            <a href="/contact">CONTACT</a>
-          </li>
-        </ul>
+          <div className="bg-cyan-500 absolute top-8 right-0 w-1/2 md:hidden">
+            <ul className="w-full justify-items-center py-4">
+              <li className="hover:text-amber-300">
+                <a href="/">HOME</a>
+              </li>
+              <li className="hover:text-amber-300">
+                <a href="/about">ABOUT</a>
+              </li>
+              <li className="hover:text-amber-300">
+                <a href="/project">PROJECTS</a>
+              </li>
+              <li className="hover:text-amber-300">
+                <a href="/skill">SKILLS</a>
+              </li>
+              <li className="hover:text-amber-300">
+                <a href="/contact">CONTACT</a>
+              </li>
+            </ul>
+          </div>
       )}
       </div>
 
     </>
-  
   );
 };
 
