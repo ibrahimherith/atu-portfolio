@@ -3,7 +3,11 @@ import { LuMenu } from "react-icons/lu";
 const Navbar = () => {
   return (
     <div className="mx-auto bg-cyan-600 w-full text-white px-8 py-2 fixed z-9999 top-0">
-      <LuMenu className="block lg:hidden text-2xl" />
+
+      <div className="flex justify-end lg:hidden">
+        <LuMenu classname= "text-3xl" />
+      </div>
+      
       <ul className="lg:flex justify-end gap-20 hidden ">
         <li> 
           <a href="/">HOME</a>

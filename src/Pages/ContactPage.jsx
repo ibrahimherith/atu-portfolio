@@ -4,13 +4,15 @@ const ContactPage = () => {
         <>
             <Navbar />
             <section
-                className="items-center pt-15"
+                className="flex flex-col h-screen items-center space-y-8 pt-15 mx-auto"
             >
 
-                <h1 className="text-center text-5xl font-bold pt-5">Contact Me</h1>
+                <div>
+                    <h1 className="text-center text-3xl md:text-5xl font-bold pt-5">Contact Me</h1>
+                </div>
 
-                <div className="mx-auto mt-10 max-w-2xl text-center">
-                    <form className="flex flex-col gap-5 space-y-2">
+                <div className="px-4 w-full md:w-1/2">
+                    <form className="flex flex-col gap-5 space-y-2 pt-5">
 
                         <input placeholder="Enter your Full Name" 
                             className="border rounded-md px-4 py-2" 
