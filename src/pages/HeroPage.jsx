@@ -21,9 +21,11 @@ const HeroPage = () => {
           <button className="bg-gray-300 hover:bg-amber-100 border rounded-md font-bold px-8 py-2">
             HIRE ME
           </button>
-          <button className="bg-cyan-600 hover:bg-amber-100 border rounded-md font-bold px-8 py-2">
-            VIEW RESUME
-          </button>
+
+          <a href="/ATUPYE_TWEVE_CV.pdf" target="_blank" rel="noopener noreferrer" 
+            className="inline-block bg-cyan-600 hover:bg-amber-100 border rounded-md font-bold px-8 py-2">
+              VIEW RESUME
+          </a>
         </div>
       </div>
 
