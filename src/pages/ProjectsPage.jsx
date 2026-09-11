@@ -20,7 +20,7 @@ const ProjectPage = () => {
               <div className="">
                 <img src="dev 2.jpg" className="md:w-50 rounded-md"/>
               </div>
-              <h3 className="text-2xl">Project 1</h3>
+              <h3 className="text-xl">HRM SYSTEM</h3>
             </div>
           </a>
 
@@ -31,7 +31,7 @@ const ProjectPage = () => {
               <div className="">
                 <img src="dev 2.jpg" className="md:w-50 rounded-md"/>
               </div>
-              <h3 className="text-2xl">Project 2</h3>
+              <h3 className="text-xl">MY PORTFOLIO</h3>
             </div>
           </a>
 

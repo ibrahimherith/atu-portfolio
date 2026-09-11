@@ -14,7 +14,7 @@ const ContactPage = () => {
         <div className="px-4 w-full md:w-1/2">
           <form className="flex flex-col gap-5 space-y-2 pt-5">
             <input
-              placeholder="Enter your Full Name"
+              placeholder="Enter your Full Name" 
               className="border rounded-md px-4 py-2"
             />
 
