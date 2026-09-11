@@ -7,7 +7,10 @@ const Navbar = () => {
   return (
     <>
       <div className="mx-auto bg-cyan-600 w-full text-white px-8 py-2 fixed z-9999 top-0">
-        <div className="flex justify-end md:hidden">
+        <div className="flex justify-between bg-amber-500 md:hidden">
+          <div className="w-1/4 rounded bg-green-300">
+            {/* <img src="logo1.png" /> */}
+          </div>
           <LuMenu
             classname="text-3xl"
             onClick={() => setIsMenuOpen((prev) => !prev)}
