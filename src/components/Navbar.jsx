@@ -22,9 +22,11 @@ const Navbar = () => {
           <li className="hover:text-amber-300">
             <Link to="/">HOME</Link>
           </li>
-          <li className="hover:text-amber-300">
+
+          {/* <li className="hover:text-amber-300">
             <Link to="/about">ABOUT</Link>
-          </li>
+          </li> */}
+
           <li className="hover:text-amber-300">
             <Link to="/project">PROJECTS</Link>
           </li>

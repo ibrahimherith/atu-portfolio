@@ -1,4 +1,6 @@
 import Navbar from "../components/Navbar";
+import { LuGithub, LuInstagram, LuLinkedin } from "react-icons/lu";
+import { FaWhatsapp } from "react-icons/fa";
 
 const ContactPage = () => {
   return (
@@ -34,6 +36,37 @@ const ContactPage = () => {
               </button>
             </div>
           </form>
+        </div>
+         <div className="text-center items-center h-full px-8 md:w-1/2">
+          
+
+          <div className="flex flex-cols justify-center text-2xl text-cyan-700  gap-10 pt-8">
+
+            <div className="flex items-center gap-2">
+              <a href="https://wa.me/255684480379" className="">
+                <FaWhatsapp className="hover:text-amber-400"/>
+              </a>
+            </div>
+            
+            <div>
+              <a href="https://github.com/atupyeetwevee" className="">
+                <LuGithub className="hover:text-amber-400"/>
+              </a>
+            </div>
+
+            <div>
+              <a href="https://www.linkedin.com/in/atu-tweve-a38979262">
+                <LuLinkedin className="hover:text-amber-400"/>
+              </a>
+            </div>
+
+            <div>
+              <a href="https://www.instagram.com/">
+                <LuInstagram className="hover:text-amber-400" />
+              </a>
+            </div>
+
+          </div>
         </div>
       </section>
     </>

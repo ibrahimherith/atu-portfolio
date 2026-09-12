@@ -2,9 +2,9 @@ const HeroPage = () => {
   return (
     <div
       id="home"
-      className="flex items-center gap-4 px-4 md:px-8 h-screen w-full overflow-hidden bg-amber-900"
+      className="flex items-center gap-4 px-4 md:px-8 h-screen w-full overflow-hidden"
     >
-      <div className="flex-2 space-y-8 text-start bg-red-500">
+      <div className="flex-2 space-y-8 text-start">
         <h1 className="font-bold text-2xl md:text-4xl">I am Atupye Tweve,</h1>
 
         <h2 className="text-cyan-600 text-3xl md:text-5xl font-bold font-comic">
@@ -13,8 +13,12 @@ const HeroPage = () => {
         </h2>
 
         <p className="text-sm text-gray-600">
+          with a unique background in Electronics & Telecommunication Engineering and networking.
           I'm experienced with 2+ years in both Frontend web development and
-          product management
+          product management 
+          I combine engineering problem-solving with frontend development and product thinking 
+          to create digital experiences that are intuitive, reliable, and built to solve real-world 
+          problems.
         </p>
 
         <div className="flex flex-col md:flex-row gap-4 text-gray-600">
@@ -30,7 +34,7 @@ const HeroPage = () => {
       </div>
 
       <div className="md:block md:flex-1 hidden">
-        <img src="demo1.png" className="w-full h-auto" />
+        <img src="toon1.png" className="w-full h-auto" />
       </div>
       
     </div>
