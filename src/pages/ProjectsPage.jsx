@@ -15,9 +15,10 @@ const ProjectPage = () => {
         <div className="flex">
           <div className="grid md:grid-cols-2 md:grid-rows-2 gap-10 text-center">
                       
-            <div className="flex gap-5 px-8 py-2 rounded-md shadow shadow-cyan-300 hover:bg-amber-100">
+            <div className="flex gap-5 px-4 py-2 rounded-md shadow shadow-cyan-300 hover:bg-amber-100">
+
               <div className="">
-                <img src="dev 2.jpg" className="md:w-70 rounded-md"/>
+                <img src="ehrm1.png" className="md:w-70 rounded-md"/>
               </div>
 
               <div className="space-y-4">
@@ -25,8 +26,8 @@ const ProjectPage = () => {
                 <p className="text-sm">A simple Human Resource Management System with employees management features</p>
 
                 <div className="flex gap-5 justify-center">
-                  <div className="flex items-center gap-2 font-bold border rounded-md bg-gray-300 hover:bg-amber-100 px-4 py-2">
-                    <a href="/ATUPYE_TWEVE_CV.pdf" target="_blank" rel="noopener noreferrer" 
+                  <div className="flex items-center gap-2 font-bold border rounded-md bg-gray-300 px-4 py-2">
+                    <a href="http://exactehrm.co.tz" target="_blank" rel="noopener noreferrer" 
                       className="">
                       LIVE DEMO
                     </a>
@@ -34,20 +35,19 @@ const ProjectPage = () => {
                     
                   </div>
 
-                  <div className="flex items-center gap-2 font-bold border rounded-md bg-gray-300 hover:bg-amber-100 px-4 py-2"></div>
-                    <a href="/ATUPYE_TWEVE_CV.pdf" target="_blank" rel="noopener noreferrer" 
+                  <div className="flex items-center gap-2 font-bold border rounded-md bg-cyan-600 px-4 py-2">
+                    <a href="" target="_blank" rel="noopener noreferrer" 
                       className="">
                       VIEW CODE
                     </a>
                     <IoLogoGithub className="text-xl" />
                   </div>
-
                 </div>
 
+              </div>
             </div>
           
-
-          <div className="flex gap-5 px-8 py-2 rounded-md shadow shadow-cyan-300 hover:bg-amber-100">
+            <div className="flex gap-5 px-4 py-2 rounded-md shadow shadow-cyan-300 hover:bg-amber-100"> 
               <div className="">
                 <img src="dev 2.jpg" className="md:w-70 rounded-md"/>
               </div>
@@ -57,23 +57,30 @@ const ProjectPage = () => {
                 <p className="text-sm">A simple Human Resource Management System with employees management features</p>
 
                 <div className="flex gap-5 justify-center">
-                  <a href="http://atupye.vercel.app/" target="_blank" rel="noopener noreferrer" 
-                    className="bg-gray-300 hover:bg-amber-100 border rounded-md font-bold px-4 py-2">
-                    LIVE DEMO
-                  </a>
+                  <div className="flex items-center gap-2 font-bold border rounded-md bg-gray-300 px-4 py-2">
+                    <a href="https://atupye.vercel.app/" target="_blank" rel="noopener noreferrer" 
+                      className="">
+                      LIVE DEMO
+                    </a>
+                    <IoOpenOutline className="text-xl" />
+                    
+                  </div>
 
-                  <a href="/ATUPYE_TWEVE_CV.pdf" target="_blank" rel="noopener noreferrer" 
-                    className="inline-block bg-cyan-600 hover:bg-amber-100 border rounded-md font-bold px-4 py-2">
-                    VIEW CODE
-                  </a>
+                  <div className="flex items-center gap-2 font-bold border rounded-md bg-cyan-600 px-4 py-2">
+                    <a href="" target="_blank" rel="noopener noreferrer" 
+                      className="">
+                      VIEW CODE
+                    </a>
+                    <IoLogoGithub className="text-xl" />
+                  </div>
                 </div>
 
               </div>
-          </div>
+            </div>
 
-          <div className="flex gap-5 px-8 py-2 rounded-md shadow shadow-cyan-300 hover:bg-amber-100">
+            <div className="flex gap-5 px-8 py-2 rounded-md shadow shadow-cyan-300 hover:bg-amber-100">
               <div className="">
-                <img src="dev 2.jpg" className="md:w-70 rounded-md"/>
+                <img src="dev 2.jpg" className="md:w-50 rounded-md"/>
               </div>
 
               <div className="space-y-4">
@@ -81,23 +88,30 @@ const ProjectPage = () => {
                 <p className="text-sm">A simple Human Resource Management System with employees management features</p>
 
                 <div className="flex gap-5 justify-center">
-                  <a href="/ATUPYE_TWEVE_CV.pdf" target="_blank" rel="noopener noreferrer" 
-                    className="bg-gray-300 hover:bg-amber-100 border rounded-md font-bold px-4 py-2">
-                    LIVE DEMO
-                  </a>
+                  <div className="flex items-center gap-2 font-bold border rounded-md bg-gray-300 px-4 py-2">
+                    <a href="" target="_blank" rel="noopener noreferrer" 
+                      className="">
+                      LIVE DEMO
+                    </a>
+                    <IoOpenOutline className="text-xl" />
+                    
+                  </div>
 
-                  <a href="/ATUPYE_TWEVE_CV.pdf" target="_blank" rel="noopener noreferrer" 
-                    className="inline-block bg-cyan-600 hover:bg-amber-100 border rounded-md font-bold px-4 py-2">
-                    VIEW CODE
-                  </a>
+                  <div className="flex items-center gap-2 font-bold border rounded-md bg-cyan-600 px-4 py-2">
+                    <a href="" target="_blank" rel="noopener noreferrer" 
+                      className="">
+                      VIEW CODE
+                    </a>
+                    <IoLogoGithub className="text-xl" />
+                  </div>
                 </div>
 
               </div>
-          </div>        
+            </div>        
 
-          <div className="flex gap-5 px-8 py-2 rounded-md shadow shadow-cyan-300 hover:bg-amber-100">
+            <div className="flex gap-5 px-8 py-2 rounded-md shadow shadow-cyan-300 hover:bg-amber-100">
               <div className="">
-                <img src="dev 2.jpg" className="md:w-70 rounded-md"/>
+                <img src="dev 2.jpg" className="md:w-50 rounded-md"/>
               </div>
 
               <div className="space-y-4">
@@ -105,20 +119,29 @@ const ProjectPage = () => {
                 <p className="text-sm">A simple Human Resource Management System with employees management features</p>
 
                 <div className="flex gap-5 justify-center">
-                  <a href="/ATUPYE_TWEVE_CV.pdf" target="_blank" rel="noopener noreferrer" 
-                    className="bg-gray-300 hover:bg-amber-100 border rounded-md font-bold px-4 py-2">
-                    LIVE DEMO
-                  </a>
+                  <div className="flex items-center gap-2 font-bold border rounded-md bg-gray-300 px-4 py-2">
+                    <a href="" target="_blank" rel="noopener noreferrer" 
+                      className="">
+                      LIVE DEMO
+                    </a>
+                    <IoOpenOutline className="text-xl" />
+                    
+                  </div>
 
-                  <a href="/ATUPYE_TWEVE_CV.pdf" target="_blank" rel="noopener noreferrer" 
-                    className="inline-block bg-cyan-600 hover:bg-amber-100 border rounded-md font-bold px-4 py-2">
-                    VIEW CODE
-                  </a>
+                  <div className="flex items-center gap-2 font-bold border rounded-md bg-cyan-600 px-4 py-2">
+                    <a href="" target="_blank" rel="noopener noreferrer" 
+                      className="">
+                      VIEW CODE
+                    </a>
+                    <IoLogoGithub className="text-xl" />
+                  </div>
                 </div>
 
               </div>
+            </div>
+
           </div>
-          </div>
+
         </div>
 
       </section>

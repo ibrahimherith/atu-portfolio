@@ -1,20 +1,69 @@
 import Navbar from "../components/Navbar";
 import { LuGithub, LuInstagram, LuLinkedin } from "react-icons/lu";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 
 const ContactPage = () => {
   return (
     <>
       <Navbar />
-      <section className="flex flex-col h-screen items-center space-y-8 pt-15 mx-auto">
+      <section className="h-screen items-center pt-15 mx-auto">
         <div>
           <h1 className="text-center text-3xl md:text-5xl font-bold pt-5">
             Contact Me
           </h1>
         </div>
 
-        <div className="px-4 w-full md:w-1/2">
-          <form className="flex flex-col gap-5 space-y-2 pt-5">
+        <div className="flex justify-evenly pt-10 px-8">
+
+          <div className="flex flex-col gap-10 w-1/4 text-lg text-cyan-700 pt-8">
+            <p className="">
+              Have a project in mind, a job opportunity or just want to say hi?<br />
+              I'd love to hear from you!
+            </p>
+
+            <div className="space-y-2">
+              <div className="flex gap-2">
+                <FaPhoneAlt className="text-2xl"/>
+                <p>+255684480379</p>
+              </div>
+
+              <div className="flex gap-2">
+                <FaLocationDot className="text-2xl"/>
+                <p>Dar es salaam - Tanzania</p>
+              </div>
+            </div>
+
+            <div className="flex gap-10">
+              <div className="">
+                <a href="https://wa.me/255684480379" className="">
+                  <FaWhatsapp className="hover:text-amber-400 text-2xl"/>
+                </a>
+              </div>
+              
+              <div className="">
+                <a href="https://github.com/atupyeetwevee" className="">
+                  <LuGithub className="hover:text-amber-400 text-2xl"/>
+                </a>
+              </div>
+
+              <div className="">
+                <a href="https://www.linkedin.com/in/atu-tweve-a38979262">
+                  <LuLinkedin className="hover:text-amber-400 text-2xl"/>
+                </a>
+              </div>
+
+              <div className="">
+                <a href="https://www.instagram.com/">
+                  <LuInstagram className="hover:text-amber-400 text-2xl" />
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div className="w-2/4 shadow-lg shadow-cyan-800 rounded-md px-4">
+          <form className="flex flex-col gap-5 space-y-2 pt-5 pb-5">
             <input
               placeholder="Enter your Full Name" 
               className="border rounded-md px-4 py-2"
@@ -36,38 +85,10 @@ const ContactPage = () => {
               </button>
             </div>
           </form>
-        </div>
-         <div className="text-center items-center h-full px-8 md:w-1/2">
-          
-
-          <div className="flex flex-cols justify-center text-2xl text-cyan-700  gap-10 pt-8">
-
-            <div className="flex items-center gap-2">
-              <a href="https://wa.me/255684480379" className="">
-                <FaWhatsapp className="hover:text-amber-400"/>
-              </a>
-            </div>
-            
-            <div>
-              <a href="https://github.com/atupyeetwevee" className="">
-                <LuGithub className="hover:text-amber-400"/>
-              </a>
-            </div>
-
-            <div>
-              <a href="https://www.linkedin.com/in/atu-tweve-a38979262">
-                <LuLinkedin className="hover:text-amber-400"/>
-              </a>
-            </div>
-
-            <div>
-              <a href="https://www.instagram.com/">
-                <LuInstagram className="hover:text-amber-400" />
-              </a>
-            </div>
-
           </div>
+
         </div>
+
       </section>
     </>
   );
