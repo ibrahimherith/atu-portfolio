@@ -2,9 +2,13 @@ const HeroPage = () => {
   return (
     <div
       id="home"
-      className="flex items-center gap-4 px-4 md:px-8 h-screen w-full overflow-hidden"
+      className="flex mt-10 items-center gap-10 px-4 md:px-8 h-screen w-full overflow-hidden"
     >
-      <div className="flex-2 space-y-8 text-start">
+      <div className="md:block md:flex-1 hidden">
+        <img src="atu1.png" className="w-full h-auto" />
+      </div>
+
+      <div className="flex-2 space-y-4 text-start">
         <h1 className="font-bold text-2xl md:text-4xl">I am Atupye Tweve,</h1>
 
         <h2 className="text-cyan-600 text-3xl md:text-5xl font-bold font-comic">
@@ -31,10 +35,6 @@ const HeroPage = () => {
               VIEW RESUME
           </a>
         </div>
-      </div>
-
-      <div className="md:block md:flex-1 hidden">
-        <img src="toon1.png" className="w-full h-auto" />
       </div>
       
     </div>
