@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { LuMenu } from "react-icons/lu";
+import { LuX, LuMenu } from "react-icons/lu";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -41,19 +41,15 @@ const Navbar = () => {
         {isMenuOpen && (
           <div
             className="fixed inset-0 bg-black/40 backdrop-blur-sm lg:hidden"
-            onClick={() => setIsMenuOpen(false)}
           />
         )}
 
         {/* mobile view */}
         {isMenuOpen && (
-          <div className="bg-cyan-500 absolute top-8 right-0 w-1/2 md:hidden">
+          <div className="bg-cyan-500 flex absolute top-8 right-0 w-1/2 md:hidden">
             <ul className="w-full justify-items-center py-4">
               <li className="hover:text-amber-300">
                 <Link to="/">HOME</Link>
-              </li>
-              <li className="hover:text-amber-300">
-                <Link to="/about">ABOUT</Link>
               </li>
               <li className="hover:text-amber-300">
                 <Link to="/project">PROJECTS</Link>
@@ -65,6 +61,10 @@ const Navbar = () => {
                 <Link to="/contact">CONTACT</Link>
               </li>
             </ul>
+
+            <div>
+              <LuX onClick={() => setIsMenuOpen(false)}/>
+            </div>
           </div>
         )}
       </div>

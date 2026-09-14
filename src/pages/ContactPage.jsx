@@ -14,9 +14,9 @@ const ContactPage = () => {
           </h1>
         </div>
 
-        <div className="flex justify-evenly pt-10 px-8">
+        <div className="md:flex md:justify-evenly pt-10 px-8">
 
-          <div className="flex flex-col gap-10 w-1/4 text-lg text-cyan-700 pt-8">
+          <div className="flex flex-col gap-10 md:w-1/4 text-lg text-cyan-700 pt-8">
             <p className="">
               Have a project in mind, a job opportunity or just want to say hi?<br />
               I'd love to hear from you!
@@ -62,7 +62,7 @@ const ContactPage = () => {
 
           </div>
 
-          <div className="w-2/4 shadow-lg shadow-cyan-800 rounded-lg px-4">
+          <div className="md:w-2/4 shadow-lg shadow-cyan-800 rounded-lg px-4 pt-4">
           <form className="flex flex-col gap-5 space-y-2 pt-5 pb-5">
             <input
               placeholder="Enter your Full Name" 
