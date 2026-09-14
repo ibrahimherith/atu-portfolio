@@ -45,7 +45,7 @@ const ProjectPage = () => {
           </p>
         </div>
 
-        <div className="flex p-10">
+        <div className="flex md:p-10">
           <div className="grid md:grid-cols-2 md:grid-rows-2 gap-10 text-center">
             
             {/* Practice Card */}

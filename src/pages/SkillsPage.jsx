@@ -56,7 +56,7 @@ const SkillsPage = () => {
             {skills.map((skill)=>(
               <div 
                 key={skill.id}
-                className="flex flex-col items-center rounded-md shadow-md shadow-cyan-800 w-full px-2 py-2">
+                className="flex flex-col items-center rounded-md shadow-lg border border-amber-200/20 w-full px-2 py-2 space-y-4">
                 <Icon icon={skill.icon} className="text-5xl" />
                 <h3 className="text-xl md:text-2xl">{skill.title}</h3>
                 <p className="bg-cyan-300/50 rounded-full px-4">{skill.description}</p>

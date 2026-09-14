@@ -34,7 +34,7 @@ const ContactPage = () => {
               </div>
             </div>
 
-            <div className="flex gap-10">
+            <div className="flex gap-10 mb-10">
               <div className="">
                 <a href="https://wa.me/255684480379" className="">
                   <FaWhatsapp className="hover:text-amber-400 text-2xl"/>
