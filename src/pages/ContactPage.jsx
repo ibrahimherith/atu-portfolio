@@ -62,7 +62,7 @@ const ContactPage = () => {
 
           </div>
 
-          <div className="w-2/4 shadow-lg shadow-cyan-800 rounded-md px-4">
+          <div className="w-2/4 shadow-lg shadow-cyan-800 rounded-lg px-4">
           <form className="flex flex-col gap-5 space-y-2 pt-5 pb-5">
             <input
               placeholder="Enter your Full Name" 
