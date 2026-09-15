@@ -86,12 +86,11 @@ const ContactPage = () => {
           </div>
 
           <div className="md:w-2/4 shadow-lg shadow-cyan-800 rounded-lg px-4 pt-4">
-          <form onsubmit = {handleSubmit}
-            action="submit" method="POST"
+          <form onSubmit = {handleSubmit}
             className="flex flex-col gap-5 space-y-2 pt-5 pb-5">
             <input
-              type="text" name="fullname" id="fullname" 
-              value={formData.fullname} onChange={handleChange}
+              type="text" name="name" id="name" 
+              value={formData.name} onChange={handleChange}
               placeholder="Enter your Full Name" 
               className="border rounded-md px-4 py-2"
             />
@@ -104,7 +103,7 @@ const ContactPage = () => {
             />
 
             <textarea
-              type="text" name="message" id="message"
+              name="message" id="message"
               value={formData.message} onChange={handleChange}
               placeholder="Enter your message"
               className="border rounded-md h-30 px-4"
