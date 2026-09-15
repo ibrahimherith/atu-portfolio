@@ -13,6 +13,7 @@ const ContactPage = () => {
     message: ""
   });
 
+  // Handles user input
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -20,10 +21,18 @@ const ContactPage = () => {
     })
   };
 
+  //Handles form submit
   const handleSubmit = (e) => {
     e.preventDefault();
 
     console.log(formData);
+
+    // Clears form after submit
+    setFormData({
+      name: "",
+      email: "",
+      message: ""
+    })
   };
 
 
@@ -86,7 +95,8 @@ const ContactPage = () => {
           </div>
 
           <div className="md:w-2/4 shadow-lg shadow-cyan-800 rounded-lg px-4 pt-4">
-          <form onSubmit = {handleSubmit}
+          <form 
+            onSubmit = {handleSubmit}
             className="flex flex-col gap-5 space-y-2 pt-5 pb-5">
             <input
               type="text" name="name" id="name" 
