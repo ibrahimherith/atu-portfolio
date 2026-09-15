@@ -36,7 +36,7 @@ const ProjectPage = () => {
   return (
     <>
       <Navbar />
-      <section className="h-screen pt-15 px-8 mx-auto">
+      <div className="min-h-screen pt-15 px-8 mx-auto">
         <div className="text-center space-y-4">
           <h1 className="text-2xl md:text-4xl font-bold">My Projects</h1>
           <p className="text-sm">
@@ -76,7 +76,7 @@ const ProjectPage = () => {
 
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 };
