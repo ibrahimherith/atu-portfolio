@@ -1,7 +1,6 @@
 const HeroPage = () => {
   return (
     <div
-      id="home"
       className="flex mt-10 items-center gap-10 px-4 md:px-8 h-screen w-full overflow-hidden"
     >
       <div className="md:block md:flex-1 hidden">
@@ -25,13 +24,14 @@ const HeroPage = () => {
           problems.
         </p>
 
-        <div className="flex flex-col md:flex-row gap-4 text-gray-600">
-          <button className="bg-gray-300 hover:bg-amber-100 border rounded-md font-bold px-8 py-2">
+        <div className="flex flex-col md:flex-row gap-4 text-center text-gray-600">
+          <a href="/contact" 
+            className="bg-cyan-600 hover:bg-amber-100 border rounded-md font-bold px-8 py-2">
             HIRE ME
-          </button>
+          </a>
 
           <a href="/ATUPYE_TWEVE_CV.pdf" target="_blank" rel="noopener noreferrer" 
-            className="inline-block bg-cyan-600 hover:bg-amber-100 border rounded-md font-bold px-8 py-2">
+            className="bg-gray-300 hover:bg-amber-100 border rounded-md font-bold px-8 py-2">
               VIEW RESUME
           </a>
         </div>

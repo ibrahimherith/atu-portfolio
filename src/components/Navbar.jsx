@@ -8,9 +8,9 @@ const Navbar = () => {
     <>
       <div className="flex justify-between items-center mx-auto bg-cyan-600 w-full text-white px-8 py-2 fixed z-9999 top-0">
 
-        <div className="bg-white/80 w-10 md:w-20 rounded-full">
+        {/* <div className="bg-white/80 w-10 md:w-20 rounded-full">
           <img src="logo1.png" className="w-full h-auto"/>
-        </div>
+        </div> */}
 
         {/* desktop view */}
         <ul className="md:flex justify-end gap-20 hidden ">
@@ -31,7 +31,7 @@ const Navbar = () => {
 
         <button className="md:hidden text-3xl"
           onClick={() => setIsMenuOpen((prev) => !prev)}>
-          {isMenuOpen ? <LuMenu /> : <LuX />}
+          {isMenuOpen ? <LuX /> : <LuMenu />}
         </button>
         
       </div>

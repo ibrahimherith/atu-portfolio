@@ -39,7 +39,8 @@ const ContactPage = () => {
   return (
     <>
       <Navbar />
-      <section className="h-screen items-center pt-15 mx-auto">
+      <section 
+        className="h-screen items-center pt-15 mx-auto">
         <div>
           <h1 className="text-center text-3xl md:text-5xl font-bold pt-5">
             Contact Me
@@ -102,6 +103,7 @@ const ContactPage = () => {
               type="text" name="name" id="name" 
               value={formData.name} onChange={handleChange}
               placeholder="Enter your Full Name" 
+              required
               className="border rounded-md px-4 py-2"
             />
 
