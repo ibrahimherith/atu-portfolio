@@ -30,7 +30,7 @@ const HeroPage = () => {
             HIRE ME
           </a>
 
-          <a href="/ATUPYE_TWEVE_CV.pdf" target="_blank" rel="noopener noreferrer" 
+          <a href="/ATUPYE TWEVE CV.pdf" target="_blank" rel="noopener noreferrer" 
             className="bg-gray-300 hover:bg-amber-100 border rounded-md font-bold px-8 py-2">
               VIEW RESUME
           </a>

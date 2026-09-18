@@ -6,6 +6,10 @@ import { useState } from "react";
 
 const ContactPage = () => {
 
+  const nameRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ]+([ '-][A-Za-zÀ-ÖØ-öø-ÿ]+)*$/;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const messageRegex = /^[\s\S]{10,500}$/;
+
   const [formData, setFormData] = useState(
   {
     name: "",
@@ -25,6 +29,21 @@ const ContactPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    if(!nameRegex.test(formData.name)){
+      alert("Please enter a valid name");
+      return;
+    }
+
+    if(!emailRegex.test(formData.email)){
+      alert("Please enter a valid Email");
+      return;
+    }
+
+    if(!messageRegex.test(formData.message)){
+      alert("Please enter charaters between 10 t0 500");
+      return;
+    }
+    
     console.log(formData);
 
     // Clears form after submit

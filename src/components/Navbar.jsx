@@ -6,14 +6,14 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
-      <div className="flex justify-between items-center mx-auto bg-cyan-600 w-full text-white px-8 py-2 fixed z-9999 top-0">
+      <div className="flex justify-end mx-auto bg-cyan-600 w-full text-white px-8 py-2 fixed z-9999 top-0">
 
         {/* <div className="bg-white/80 w-10 md:w-20 rounded-full">
           <img src="logo1.png" className="w-full h-auto"/>
         </div> */}
 
         {/* desktop view */}
-        <ul className="md:flex justify-end gap-20 hidden ">
+        <ul className="md:flex gap-20 hidden ">
           <li className="hover:text-amber-300">
             <Link to="/">HOME</Link>
           </li>
@@ -63,9 +63,6 @@ const Navbar = () => {
             </li>
           </ul>
 
-          {/* <div>
-            <LuX onClick={() => setIsMenuOpen(false)}/>
-          </div> */}
         </div>
       )}
 
