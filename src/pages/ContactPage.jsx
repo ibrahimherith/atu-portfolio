@@ -17,6 +17,14 @@ const ContactPage = () => {
     message: ""
   });
 
+  const [errors, setErrors] = useState(
+    {
+      name: "",
+      email: "",
+      message: ""
+    }
+  );
+
   // Handles user input
   const handleChange = (e) => {
     setFormData({
@@ -28,7 +36,7 @@ const ContactPage = () => {
   //Handles form submit
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    
     if(!nameRegex.test(formData.name)){
       alert("Please enter a valid name");
       return;
@@ -43,7 +51,7 @@ const ContactPage = () => {
       alert("Please enter charaters between 10 t0 500");
       return;
     }
-    
+
     console.log(formData);
 
     // Clears form after submit
