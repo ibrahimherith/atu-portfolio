@@ -92,20 +92,33 @@ const ContactPage = () => {
                 )}
               </div>
 
-              <input
-                type="email"
-                id="email"
-                {...register("email")}
-                placeholder="example@gmail.com"
-                className="border rounded-md px-4 py-2"
-              />
+              <div className="space-y-2">
+                <input
+                  type="email"
+                  id="email"
+                  {...register("email", { required: "Enter an email address", pattern: {
+                    value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                    message: "Please enter a valid email address",}
+                  ,})}
+                  placeholder="example@gmail.com"
+                  className="w-full border rounded-md px-4 py-2"
+                />
+                {errors.email && (
+                  <p className="text-xs text-red-500">{errors.email?.message}</p>
+                )}
+              </div>
 
-              <textarea
-                id="message"
-                {...register("message")}
-                placeholder="Enter your message"
-                className="border rounded-md h-30 px-4"
-              ></textarea>
+              <div className="space-y-2">
+                <textarea
+                  id="message"
+                  {...register("message", { required: "Message must be between 10 and 500 characters"})}
+                  placeholder="Enter your message"
+                  className="w-full border rounded-md h-30 px-4">
+                </textarea>
+                {errors.email && (
+                  <p className="text-xs text-red-500">{errors.message?.message}</p>
+                )}
+              </div>
 
               <div className="flex text-gray-600 gap-4">
                 <button
