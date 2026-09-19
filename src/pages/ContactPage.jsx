@@ -2,72 +2,25 @@ import Navbar from "../components/Navbar";
 import { LuGithub, LuInstagram, LuLinkedin } from "react-icons/lu";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
-import { useState } from "react";
+import { useForm } from "react-hook-form";
 
 const ContactPage = () => {
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
 
-  const nameRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ]+([ '-][A-Za-zÀ-ÖØ-öø-ÿ]+)*$/;
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  const messageRegex = /^[\s\S]{10,500}$/;
-
-  const [formData, setFormData] = useState(
-  {
-    name: "",
-    email: "",
-    message: ""
-  });
-
-  const [errors, setErrors] = useState(
-    {
-      name: "",
-      email: "",
-      message: ""
-    }
-  );
-
-  // Handles user input
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name] : e.target.value,
-    })
-  };
-
-  //Handles form submit
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
-    if(!nameRegex.test(formData.name)){
-      alert("Please enter a valid name");
-      return;
-    }
-
-    if(!emailRegex.test(formData.email)){
-      alert("Please enter a valid Email");
-      return;
-    }
-
-    if(!messageRegex.test(formData.message)){
-      alert("Please enter charaters between 10 t0 500");
-      return;
-    }
-
+  const onSubmitForm = (formData) => {
     console.log(formData);
-
-    // Clears form after submit
-    setFormData({
-      name: "",
-      email: "",
-      message: ""
-    })
+    reset();
   };
-
 
   return (
     <>
       <Navbar />
-      <section 
-        className="h-screen items-center pt-15 mx-auto">
+      <section className="h-screen items-center pt-15 mx-auto">
         <div>
           <h1 className="text-center text-3xl md:text-5xl font-bold pt-5">
             Contact Me
@@ -75,21 +28,21 @@ const ContactPage = () => {
         </div>
 
         <div className="md:flex md:justify-evenly pt-10 px-8">
-
           <div className="flex flex-col gap-10 md:w-1/4 text-lg text-cyan-700 pt-8">
             <p className="">
-              Have a project in mind, a job opportunity or just want to say hi?<br />
+              Have a project in mind, a job opportunity or just want to say hi?
+              <br />
               I'd love to hear from you!
             </p>
 
             <div className="space-y-2">
               <div className="flex gap-2">
-                <FaPhoneAlt className="text-2xl"/>
+                <FaPhoneAlt className="text-2xl" />
                 <p>+255684480379</p>
               </div>
 
               <div className="flex gap-2">
-                <FaLocationDot className="text-2xl"/>
+                <FaLocationDot className="text-2xl" />
                 <p>Dar es salaam - Tanzania</p>
               </div>
             </div>
@@ -97,19 +50,19 @@ const ContactPage = () => {
             <div className="flex gap-10 mb-10">
               <div className="">
                 <a href="https://wa.me/255684480379" className="">
-                  <FaWhatsapp className="hover:text-amber-400 text-2xl"/>
+                  <FaWhatsapp className="hover:text-amber-400 text-2xl" />
                 </a>
               </div>
-              
+
               <div className="">
                 <a href="https://github.com/atupyeetwevee" className="">
-                  <LuGithub className="hover:text-amber-400 text-2xl"/>
+                  <LuGithub className="hover:text-amber-400 text-2xl" />
                 </a>
               </div>
 
               <div className="">
                 <a href="https://www.linkedin.com/in/atu-tweve-a38979262">
-                  <LuLinkedin className="hover:text-amber-400 text-2xl"/>
+                  <LuLinkedin className="hover:text-amber-400 text-2xl" />
                 </a>
               </div>
 
@@ -119,46 +72,52 @@ const ContactPage = () => {
                 </a>
               </div>
             </div>
-
           </div>
 
           <div className="md:w-2/4 shadow-lg shadow-cyan-800 rounded-lg px-4 pt-4">
-          <form 
-            onSubmit = {handleSubmit}
-            className="flex flex-col gap-5 space-y-2 pt-5 pb-5">
-            <input
-              type="text" name="name" id="name" 
-              value={formData.name} onChange={handleChange}
-              placeholder="Enter your Full Name" 
-              required
-              className="border rounded-md px-4 py-2"
-            />
+            <form
+              onSubmit={handleSubmit(onSubmitForm)}
+              className="flex flex-col gap-5 space-y-2 pt-5 pb-5"
+            >
+              <div className="space-y-2">
+                <input
+                  type="text"
+                  id="name"
+                  {...register("name", { required: "name is required" })}
+                  placeholder="Enter your Full Name"
+                  className="w-full border rounded-md px-4 py-2"
+                />
+                {errors.name && (
+                  <p className="text-xs text-red-500">{errors.name?.message}</p>
+                )}
+              </div>
 
-            <input
-              type="email" name="email" id="email"
-              value={formData.email} onChange={handleChange} 
-              placeholder="example@gmail.com"
-              className="border rounded-md px-4 py-2"
-            />
+              <input
+                type="email"
+                id="email"
+                {...register("email")}
+                placeholder="example@gmail.com"
+                className="border rounded-md px-4 py-2"
+              />
 
-            <textarea
-              name="message" id="message"
-              value={formData.message} onChange={handleChange}
-              placeholder="Enter your message"
-              className="border rounded-md h-30 px-4"
-            ></textarea>
+              <textarea
+                id="message"
+                {...register("message")}
+                placeholder="Enter your message"
+                className="border rounded-md h-30 px-4"
+              ></textarea>
 
-            <div className="flex text-gray-600 gap-4">
-              <button type="submit" 
-                className="bg-cyan-600  hover:bg-amber-100 border rounded-md font-bold px-8 py-2">
-                SUBMIT
-              </button>
-            </div>
-          </form>
+              <div className="flex text-gray-600 gap-4">
+                <button
+                  type="submit"
+                  className="bg-cyan-600  hover:bg-amber-100 border rounded-md font-bold px-8 py-2"
+                >
+                  SUBMIT
+                </button>
+              </div>
+            </form>
           </div>
-
         </div>
-
       </section>
     </>
   );
