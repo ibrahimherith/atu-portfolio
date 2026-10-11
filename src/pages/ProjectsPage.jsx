@@ -24,12 +24,12 @@ const ProjectPage = () => {
     },
     {
       id: 3,
-      title: "FIRE ALARM SYSTEM",
+      title: "MOVIE CART",
       description: 
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dicta quis cumque laboriosam, velit rerum tempora eius dolore corporis at. Porro mollitia tempora veritatis excepturi quo aperiam, tenetur beatae quos.",
-      link1: "http://exactehrm.co.tz",
-      link2: "http://exactehrm.co.tz",
-      image: "dev 1.jpg"
+        "A movie discovery website where you can search for your favorite movies and series, bookmark your picks, and enjoy the feeling of shopping for entertainment.",
+      link1: "https://movie-cart-ay5t3ykuw-art-e780.vercel.app/",
+      link2: "https://movie-cart-ay5t3ykuw-art-e780.vercel.app/",
+      image: "movie_cart.png"
     }
   ]
 

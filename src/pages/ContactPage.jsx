@@ -83,7 +83,7 @@ const ContactPage = () => {
                 <input
                   type="text"
                   id="name"
-                  {...register("name", { required: "name is required" })}
+                  {...register("name", { required: "Name is required" })}
                   placeholder="Enter your Full Name"
                   className="w-full border rounded-md px-4 py-2"
                 />
