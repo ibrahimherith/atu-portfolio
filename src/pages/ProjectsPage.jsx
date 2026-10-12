@@ -8,10 +8,10 @@ const ProjectPage = () => {
       id: 1,
       title: "MY PORTIFOLIO",
       description: 
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dicta quis cumque laboriosam, velit rerum tempora eius dolore corporis at. Porro mollitia tempora veritatis excepturi quo aperiam, tenetur beatae quos.",
+        "My portfolio showcases my journey as a frontend developer with a background in Electronics and Telecommunication Engineering. It highlights my projects, technical skills, and passion for building responsive, user-friendly web experiences while growing toward becoming a full-stack developer.",
       link1: "http://exactehrm.co.tz",
       link2: "http://exactehrm.co.tz",
-      image: "toon1.png"
+      image: "portfolio.png"
     },
     {
       id: 2,
