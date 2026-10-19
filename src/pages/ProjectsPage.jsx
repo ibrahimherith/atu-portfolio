@@ -27,8 +27,8 @@ const ProjectPage = () => {
       title: "MOVIE CART",
       description: 
         "A movie discovery website where you can search for your favorite movies and series, bookmark your picks, and enjoy the feeling of shopping for entertainment.",
-      link1: "https://movie-cart-ay5t3ykuw-art-e780.vercel.app/",
-      link2: "https://movie-cart-ay5t3ykuw-art-e780.vercel.app/",
+      link1: "https://movie-cart-pi.vercel.app/",
+      link2: "https://movie-cart-pi.vercel.app/",
       image: "movie_cart.png"
     }
   ]
